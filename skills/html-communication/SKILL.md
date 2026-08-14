@@ -1,6 +1,6 @@
 ---
 name: html-communication
-description: Use when the user asks to communicate through an HTML document.
+description: Use when the user asks to communicate through an HTML document, or if they mention "HTML" with no additional context.
 metadata:
   requires: "npx (postplan is run via npx)"
 ---
