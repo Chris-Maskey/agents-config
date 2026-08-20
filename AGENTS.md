@@ -1,41 +1,64 @@
-I'm Chris. You're my agent. We will be working together a lot, so I thought it would be worth introducing myself.
+# Agent instructions
 
-I love to build. I focus on building complex things as simple as possible. I love to find ways to reduce complexity when solving problems.
+I'm Chris. These are my default preferences for work in this repository.
 
-I wanted to share some of my preference here so we can be more aligned as we work together.
+This repository contains reusable skills, plugins, and agent configuration. Read the nearest nested `AGENTS.md` before changing a subproject.
 
-## Coding Preference - General
+## Core principles
 
-- Keep things simple. Channel "YAGNI" energy unless told otherwise.
-- Type safety is useful, take advantage of it.
-- Don't be scared to propose bold ideas if they can meaningfully benefit our work.
-- Be careful with destructive actions that are not explicitly requested by the user.
-- Do not preserve backward compatibility. Remove obsolete paths instead of adding compatibility layers, fallbacks, or migrations.
-- Choose the simplest implementation that fully meets the current requirements. Avoid speculative abstractions, configurations, and indirection.
-- Grow the system in layers. Start from the smallest version that works end to end, and add each new capability on top of a product that already works. Never trade a working product for unfinished complexity.
-- Study how established products solve the problem before designing a solution. Adopt their proven patterns and conventions rather than inventing an approach from scratch.
-- Keep components modular and concerns clearly separated.
-- Prefer established, well-maintained libraries when they reduce overall complexity or improve reliability. Do not reimplement common functionality without a clear reason.
-- Lean on the dependencies already in the project before writing your own implementation or adding packages. Do not assume a library lacks a capability without checking its documentation and types.
-- Make architectural decisions for the long term. Do not accept a stopgap that only works for now and is meant to be replaced later.
-- When reporting information to me, be extremely concise and sacrifice grammar for the sake of concision.
-- Talk in ASD-STE100 Simplified Technical English.
+- Keep solutions simple. Apply YAGNI. Do not build for hypothetical requirements.
+- Build the smallest version that works end to end.
+- Grow systems in working layers. Add the next capability only after the current product works.
+- Prefer deletion over addition. Remove obsolete code and paths.
+- Use the fewest files and the shortest working diff.
+- Reuse existing code, patterns, native platform features, and installed dependencies.
+- Add abstractions, configuration, and dependencies only when current requirements need them.
+- Prefer established patterns over novel designs.
+- Keep modules and components focused. Do not create an abstraction unless it reduces current complexity.
+- Choose a simple design we can keep. Do not build future capabilities until current requirements need them.
+- Suggest bold alternatives only when they materially improve or simplify the requested result. Do not expand scope without approval.
 
-## Coding preference (Typescript focused)
+## Compatibility
 
-- any is the enemy. Inferred types are our friend. Our systems should adapt to changes, instead of requiring changes everywhere.
-- If your TS code looks like a Python dev wrote it, it is bad TS code.
-- Avoid one-line functions that are just casting wrappers.
-- Write TypeScript in ways that Matt Pocock and Theo would be proud of.
-- If not already specified in project, I generally like to use the following tech: Convex, Tailwind, React, Vite, Next.js, pnpm.
-- When building more complex web apps, I like to pull in Zustand, React Query, Tanstack Start, Clerk (or better-auth if selfhosting), and ArkType (or zod if perf isn't and issue)
+- Do not preserve backward compatibility.
+- Remove obsolete paths instead of adding compatibility layers, fallbacks, or migrations.
 
-## Questions are read-only
+## TypeScript
 
-- A question is a request for an answer, not for changes. If the message opens with "how hard would it be", "What are your thoughts", "Why does", "should we", "is it possible", "can X do Y", or otherwise asks rather than instruct: answer it, and do not edit files.
-- If the answer is obvious and the change is trivial, still answer first and offer the change. Ask before making it.
+- Use type safety and inferred types.
+- Prefer idiomatic TypeScript.
+- Avoid `any`, unnecessary casts, and wrapper functions.
+- When editing `.ts` or `.tsx` files, follow `skills/typescript-best-practices/SKILL.md`.
 
-## Match ceremony to the task
+## Technology defaults
 
-- Do not spawn subagents or a multi-agent panel for work a single agent finishes in one pass. Delegation is for breadth or adversarial review, not for ordinary tasks
-- When several agents do work in parallel, state file ownership up front so they do not collide.
+- Follow the project's existing stack and conventions.
+- If the project leaves technology choices open, prefer pnpm, React, Vite or Next.js, Tailwind, and Convex.
+- For complex web apps, consider Zustand, TanStack Query, TanStack Start, Clerk or better-auth, and ArkType or Zod.
+- Add a dependency only when it solves a current requirement.
+
+## Task boundaries
+
+- Questions are read-only. Answer them without changing files.
+- If a change seems obvious or trivial, answer first and ask before applying it.
+- Do not make destructive changes unless explicitly requested.
+- Verify exact targets before deleting or overwriting.
+- For bug fixes, inspect every caller and trace the shared path before editing. Fix the root cause once.
+- Complete ordinary tasks yourself. Use subagents only for breadth or independent review.
+- If multiple agents work in parallel, state file ownership first.
+
+## Plan mode
+
+- Make plans extremely concise. Sacrifice grammar for concision.
+- End every plan with a list of unresolved questions, if any.
+
+## Verification
+
+- For code changes, run the smallest relevant check.
+- For non-trivial logic, leave one runnable check that fails if the logic breaks.
+- Report what changed and which checks passed or failed.
+
+## Communication
+
+- Use concise, plain English.
+- Follow ASD-STE100 Simplified Technical English.

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Plan Maker"
+  short_description: "Create concise, actionable work plans"
+  default_prompt: "Use $plan-maker to create a concise plan for this work."
+
+policy:
+  allow_implicit_invocation: true
