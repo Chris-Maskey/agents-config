@@ -37,6 +37,18 @@ This repository contains reusable skills, plugins, and agent configuration. Read
 - For complex web apps, consider Zustand, TanStack Query, TanStack Start, Clerk or better-auth, and ArkType or Zod.
 - Add a dependency only when it solves a current requirement.
 
+## Architecture and engineering standards
+
+- Choose established architecture and design patterns appropriate to the domain, scale, risk, and existing stack.
+- Prefer proven, boring solutions over novel or fashionable patterns.
+- For unfamiliar, security-sensitive, data-sensitive, performance-critical, or integration-heavy work, inspect existing code and consult authoritative sources:
+  official documentation, relevant standards, RFCs, OWASP guidance, and mature reference implementations.
+- Match repository conventions unless a concrete problem justifies changing them.
+- Keep modules cohesive, dependencies directional, interfaces small, and responsibilities clear.
+- Apply clean-code practices that improve readability, testability, and change safety. Do not add layers or abstractions without a current need.
+- Include relevant validation, security, accessibility, error handling, observability, and tests.
+- For non-trivial changes, report the chosen approach, key trade-offs, sources consulted, and checks run. Record lasting architectural decisions in an ADR.
+
 ## Task boundaries
 
 - Questions are read-only. Answer them without changing files.
