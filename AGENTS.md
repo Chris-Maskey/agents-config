@@ -2,7 +2,7 @@
 
 I'm Chris. These are my default preferences for work in this repository.
 
-This repository contains reusable skills, plugins, and agent configuration. Read the nearest nested `AGENTS.md` before changing a subproject.
+This repository contains reusable skills, plugins, and agent configuration.
 
 ## Core principles
 

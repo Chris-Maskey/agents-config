@@ -1,0 +1,4 @@
+interface:
+  display_name: "Coursework Guide"
+  short_description: "Guide labs and assignments from rubric to submission"
+  default_prompt: "Use $coursework-guide to guide me through this lab or assignment, adapt setup to my Mac, and track tests, screenshots, report sections, and submission requirements."

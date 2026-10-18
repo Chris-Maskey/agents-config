@@ -228,6 +228,24 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-08-19T05:33:03.091Z",
       "updatedAt": "2026-08-19T05:33:03.091Z"
+    },
+    "animate": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/emilkowalski/skills.git",
+      "skillPath": "skills/animate/SKILL.md",
+      "skillFolderHash": "adf23358fac7bdce5febcb85d7fd985407ead56f",
+      "installedAt": "2026-08-25T13:46:45.425Z",
+      "updatedAt": "2026-08-25T13:46:45.425Z"
+    },
+    "last30days": {
+      "source": "mvanhorn/last30days-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mvanhorn/last30days-skill.git",
+      "skillPath": "skills/last30days/SKILL.md",
+      "skillFolderHash": "1931154e02dc4aac59506eb92b344a9f2af0baa4",
+      "installedAt": "2026-09-29T21:11:55.633Z",
+      "updatedAt": "2026-09-29T21:11:55.633Z"
     }
   },
   "dismissed": {
@@ -235,14 +253,13 @@
   },
   "lastSelectedAgents": [
     "amp",
-    "antigravity",
-    "antigravity-cli",
     "cline",
     "codex",
     "cursor",
-    "deepagents",
+    "droid",
     "gemini-cli",
     "github-copilot",
+    "kilo",
     "kimi-code-cli",
     "opencode",
     "warp",
