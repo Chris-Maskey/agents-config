@@ -6,9 +6,10 @@ This repository contains reusable skills, plugins, and agent configuration.
 
 ## Core principles
 
+- Check for applicable skills before starting work.
 - Keep solutions simple. Apply YAGNI. Do not build for hypothetical requirements.
 - Build the smallest version that works end to end.
-- Grow systems in working layers. Add the next capability only after the current product works.
+- Grow systems in working layers. Add the next capability only after the current product works
 - Prefer deletion over addition. Remove obsolete code and paths.
 - Use the fewest files and the shortest working diff.
 - Reuse existing code, patterns, native platform features, and installed dependencies.
