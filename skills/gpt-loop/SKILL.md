@@ -1,6 +1,6 @@
 ---
-name: gpt-loop
-description: Use when the user says "gpt loop".
+name: sol-loop
+description: Use when the user says "sol loop".
 ---
 
 # sol-loop
